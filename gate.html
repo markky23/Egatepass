@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatePass</title>
+    <link rel="stylesheet" href="gate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css" rel="stylesheet">
+</head>
+<body>
+
+    
+    
+    <div class="sidebar">
+        <div class="logo">
+            <div class="admin-logo">
+                <i class="fa-regular fa-user">Admin Name</i>
+            </div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="home.html" onclick="navigateTo('home')">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="gate.html" onclick="navigateTo('gate-pass')">
+                        <i class="fa-regular fa-note-sticky"></i>
+                        <span>Gate Pass</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="checkreq.html" onclick="navigateTo('check-requests')">
+                        <i class="fa-regular fa-note-sticky" style="color: #63E6BE;"></i>
+                        <span>Check Requests</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dress.html" onclick="navigateTo('dress-code')">
+                        <i class="fa-solid fa-person-dress"></i>
+                        <span>Dress Code</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Muser.html" onclick="navigateTo('manage-users')">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Manage Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="accsett.html" onclick="navigateTo('account-settings')">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Account settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" onclick="navigateTo('about')">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="logOut.html" onclick="navigateTo('logout')">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>LOGOUT</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+
+    <header>
+        <div class="header-left">
+          <img src="dSAS-removebg-preview.png" alt="Logo">
+          <span class="site-name">eGatepass</span>
+        </div>
+        <div class="header-center">
+          <div class="user--info">
+            <div class="search--box">
+              <i class="fa-solid fa-search"></i>
+              <input type="text" placeholder="Search">
+            </div>
+          </div>
+        </div>
+
+        
+    </header>
+    
+    <main>
+        <div class="gate-pass-form">
+            <h1>Universidad De Zamboanga</h1>
+            <p>Department of Student Affairs and Services</p>
+            <p>Don Toribio ST., Tetuan, Zamboanga City 7000</p>
+            <form>
+                <label>
+                    Issued for:
+                    <input type="checkbox"> Uniform
+                    <input type="checkbox"> School
+                </label>
+                <label>ID Reason(s) for Issuance:</label>
+                <textarea rows="4"></textarea>
+                <label>Name:</label>
+                <input type="text">
+                <label>Course & Year:</label>
+                <input type="text">
+                <label>Student Number:</label>
+                <input type="text">
+                <label>Date of Request:</label>
+                <input type="date">
+                <label>Valid Until:</label>
+                <input type="date">
+                <label>No. of Time issued:</label>
+                <input type="text">
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="button" class="edit-button">Edit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+    
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
